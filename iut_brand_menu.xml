@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- Top menu item -->
+        <menuitem name="Iut" id="tdsiIUT_menu_root" groups="group_model_member" sequence="80" />
+
+        <!-- Menu Modele / Configuration -->
+            <menuitem id="tdsiIUT.Configuration" parent="tdsiIUT_menu_root"
+                name="Niveau2" sequence="16"/>
+
+                    <menuitem id="tdsiIUT.brand" parent="tdsiIUT.Configuration"
+                        action="iut_brand_action" sequence="10" name="Brand"/>
+
+                    <menuitem id="tdsiIUT.devices" parent="tdsiIUT.Configuration"
+                            action="iut_device_action" sequence="10" name="Device"/>
+
+                    <menuitem id="tdsiIUT.model_type" parent="tdsiIUT.Configuration"
+                            action="iut_model_type_action" sequence="10" name="Model_Type"/>
+
+                    <menuitem id="tdsiIUT.model" parent="tdsiIUT.Configuration"
+                            action="iut_model_action" sequence="10" name="Model"/>
+
+                    <menuitem id="tdsiIUT.room" parent="tdsiIUT.Configuration"
+                            action="iut_room_action" sequence="10" name="Room"/>
+
+                    <menuitem id="tdsiIUT.office" parent="tdsiIUT.Configuration"
+                            action="iut_office_action" sequence="10" name="Office"/>
+
+                    <!--<menuitem id="tdsiIUT.res_partner" parent="tdsiIUT.Configuration"-->
+                            <!--action="res_partner_action" sequence="10" name="Partner"/>-->
+    </data>
+</openerp>
